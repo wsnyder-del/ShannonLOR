@@ -1,0 +1,16 @@
+[build]
+  publish = "html"
+
+[[redirects]]
+  from = "/"
+  to   = "/lor_fuhrman.html"
+  status = 200
+
+# Optional: redirect bare /lor to the form
+[[redirects]]
+  from = "/lor"
+  to   = "/lor_fuhrman.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
