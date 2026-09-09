@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pioneer Legal Consulting – Letter of Representation (Fuhrman)</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a2d4e; --navy-mid: #2c4470; --gold: #b8922a; --gold-light: #d4a843;
+  --cream: #faf8f4; --warm-white: #ffffff; --text: #1c1c1c; --text-mid: #3d3d3d;
+  --text-light: #6b6b6b; --border: #d8d2c8; --border-focus: #b8922a;
+  --shadow: 0 2px 12px rgba(26,45,78,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; font-size: 14px; }
+
+@media print {
+  body { background: white; font-size: 11pt; }
+  .no-print { display: none !important; }
+  .lor-page { box-shadow: none; border: none; page-break-after: always; }
+  .lor-page:last-child { page-break-after: auto; }
+  .doc-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sig-typed { border-bottom: 1.5px solid #333 !important; }
+  .float-submit { display: none !important; }
+}
+
+.page-wrap { max-width: 820px; margin: 0 auto; padding: 0 20px 80px; }
+
+/* ── SITE HEADER ── */
+header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  color: white; padding: 36px 40px 28px; margin-bottom: 28px;
+  position: relative; overflow: hidden;
+}
+header::after { content:''; position:absolute; bottom:0; left:0; right:0; height:4px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); }
+header::before { content:''; position:absolute; top:-60px; right:-60px; width:200px; height:200px; border-radius:50%; border:36px solid rgba(184,146,42,0.12); }
+.firm-name { font-family:'EB Garamond',serif; font-size:24px; font-weight:600; letter-spacing:0.04em; margin-bottom:4px; }
+.firm-sub { font-size:12px; opacity:0.65; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:16px; }
+.doc-title { font-family:'EB Garamond',serif; font-size:19px; border-top:1px solid rgba(255,255,255,0.2); padding-top:14px; }
+.contact-bar { margin-top:12px; font-size:11px; opacity:0.6; }
+
+/* ── DOCUMENT PAGES ── */
+.lor-page {
+  background: var(--warm-white); border-radius:8px; box-shadow:var(--shadow);
+  border:1px solid var(--border); margin-bottom:20px; overflow:hidden;
+}
+
+/* ── DOCUMENT LETTERHEAD ── */
+.doc-header {
+  background: var(--navy); color: white;
+  display: grid; grid-template-columns: 1fr auto;
+  align-items: center; padding: 16px 32px; gap: 20px;
+}
+.doc-header-left .dh-firm { font-family:'EB Garamond',serif; font-size:18px; font-weight:600; letter-spacing:0.04em; }
+.doc-header-left .dh-sub { font-size:10px; opacity:0.7; letter-spacing:0.06em; font-style:italic; margin-top:2px; }
+.doc-header-right { text-align:right; font-size:11px; opacity:0.75; line-height:1.6; }
+.doc-gold-bar { height:3px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+
+.page-body { padding: 32px 40px 36px; }
+
+/* ── TYPOGRAPHY ── */
+.lor-text { font-size:13.5px; color:var(--text-mid); line-height:1.8; margin-bottom:14px; }
+.lor-text strong { color:var(--text); }
+.section-head { font-family:'EB Garamond',serif; font-size:16px; font-weight:600; color:#2563a8; border-bottom:1px solid #e0e8f4; padding-bottom:6px; margin:24px 0 14px; }
+.step-title { font-size:13.5px; font-weight:600; color:var(--text); margin-bottom:4px; margin-top:14px; }
+.bullet-list { margin: 8px 0 14px 20px; }
+.bullet-list li { font-size:13.5px; color:var(--text-mid); line-height:1.8; margin-bottom:4px; }
+.confidential-bar { text-align:center; font-size:10px; color:var(--text-light); border-top:1px solid var(--border); padding-top:10px; margin-top:24px; font-style:italic; letter-spacing:0.06em; }
+.confidential-bar strong { color:var(--text); }
+.divider-line { border:none; border-top:1px solid var(--border); margin:20px 0; }
+
+/* ── INITIALS BLOCK ── */
+.initials-wrap {
+  display:flex; align-items:center; gap:14px;
+  background:#f8f6f2; border-left:3px solid var(--gold);
+  padding:12px 16px; border-radius:0 6px 6px 0; margin:16px 0;
+}
+.initials-label { font-size:12px; color:var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.04em; white-space:nowrap; }
+.initials-field {
+  font-family:'Dancing Script',cursive; font-size:22px; color:var(--navy);
+  border:none; border-bottom:2px solid var(--gold); background:transparent;
+  outline:none; width:100px; padding:2px 4px; text-align:center;
+}
+.initials-field::placeholder { font-family:'DM Sans',sans-serif; font-size:11px; color:#bbb; }
+.initials-text { font-size:12.5px; color:var(--text-mid); line-height:1.5; flex:1; }
+.client-sig-field.sig-error, .initials-field.sig-error {
+  border-bottom-color: #c0392b !important;
+  box-shadow: 0 2px 0 rgba(192,57,43,0.2);
+}
+
+/* ── SIGNATURE BLOCK ── */
+.sig-section { margin-top:24px; }
+.sig-block { margin:16px 0; padding:18px 20px; background:#f8f6f2; border-radius:6px; border-left:3px solid var(--gold); }
+.sig-block.plc { border-left-color: var(--navy); }
+.sig-block-title { font-size:12px; font-weight:600; color:var(--navy); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:12px; }
+.sig-row { display:grid; grid-template-columns:2fr 1fr; gap:20px; margin-bottom:10px; }
+@media(max-width:580px) { .sig-row { grid-template-columns:1fr; } }
+.field-group { display:flex; flex-direction:column; }
+.field-label { font-size:11px; font-weight:600; color:var(--text-light); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px; }
+.field-input {
+  font-family:'DM Sans',sans-serif; font-size:13px; color:var(--text);
+  background:var(--warm-white); border:1px solid var(--border); border-radius:4px;
+  padding:8px 10px; outline:none; width:100%; transition:border-color 0.15s;
+}
+.field-input:focus { border-color:var(--border-focus); box-shadow:0 0 0 3px rgba(184,146,42,0.12); }
+.field-input.sig-error { border-color:#c0392b !important; box-shadow:0 0 0 3px rgba(192,57,43,0.12) !important; }
+.sig-typed {
+  font-family:'Dancing Script',cursive; font-size:26px; color:var(--navy);
+  border:none; border-bottom:2px solid var(--navy); background:transparent;
+  outline:none; width:100%; padding:4px 0;
+}
+.sig-typed::placeholder { font-family:'DM Sans',sans-serif; font-size:13px; color:#bbb; }
+.field-row { display:grid; gap:14px; margin:10px 0; }
+.field-row.two { grid-template-columns:1fr 1fr; }
+@media(max-width:580px) { .field-row.two { grid-template-columns:1fr; } }
+.req { color:#c0392b; }
+
+/* ── SHANNON SIGNATURE ── */
+.atty-sig-wrap { margin:12px 0; }
+.atty-sig-name { font-family:'Dancing Script',cursive; font-size:32px; color:var(--navy-mid); line-height:1.2; }
+.atty-sig-details { font-size:12.5px; color:var(--text-mid); margin-top:6px; line-height:1.6; }
+
+/* ── NOTICE BOX ── */
+.notice-box { background:#fff8e8; border:1px solid #e8d08a; border-radius:6px; padding:14px 18px; margin:16px 0; font-size:12.5px; color:#6b5a00; line-height:1.6; }
+
+/* ── STAGE BANNERS ── */
+.stage-banner { display:none; padding:16px 24px; border-radius:8px; margin-bottom:20px; font-size:14px; line-height:1.6; text-align:center; }
+.stage-banner.rep { background:#e8f0fe; border:1px solid #b0c8f0; color:#1a3a6b; }
+.stage-banner.client { background:#fff8e8; border:2px solid var(--gold); color:#6b4a00; font-weight:600; }
+.stage-banner.active { display:block; }
+
+/* ── BANNERS ── */
+.banner { display:none; padding:18px 24px; border-radius:8px; margin-bottom:20px; font-size:14px; line-height:1.6; }
+.banner.success { background:#d4edda; border:1px solid #c3e6cb; color:#155724; }
+.banner.error { background:#f8d7da; border:1px solid #f5c6cb; color:#721c24; }
+.banner.active { display:block; }
+.error-msg { display:none; background:#f8d7da; border:1px solid #f5c6cb; color:#721c24; border-radius:6px; padding:12px 18px; margin-bottom:16px; font-size:13.5px; line-height:1.5; }
+.error-msg.active { display:block; }
+
+/* ── BUTTONS ── */
+.submit-row { display:flex; justify-content:center; margin-top:28px; gap:14px; flex-wrap:wrap; }
+.submit-btn { background: linear-gradient(135deg, var(--navy), var(--navy-mid)); color:white; border:none; padding:15px 44px; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; cursor:pointer; letter-spacing:0.02em; transition:all 0.2s; box-shadow:0 4px 14px rgba(26,45,78,0.3); }
+.submit-btn:hover { transform:translateY(-1px); }
+.submit-btn:disabled { opacity:0.6; cursor:not-allowed; transform:none; }
+.prepare-btn { background: linear-gradient(135deg, #2d6a4f, #1b4332); color:white; border:none; padding:15px 44px; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.2s; box-shadow:0 4px 14px rgba(45,106,79,0.3); }
+.prepare-btn:hover { transform:translateY(-1px); }
+.print-btn { background:transparent; color:var(--navy); border:1px solid var(--navy); padding:15px 28px; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:500; cursor:pointer; transition:all 0.2s; }
+
+/* ── FLOATING BUTTON ── */
+.float-submit {
+  display:none; position:fixed; bottom:24px; left:50%; transform:translateX(-50%);
+  z-index:999; background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+  color:white; border:none; padding:16px 40px; border-radius:50px;
+  font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; cursor:pointer;
+  box-shadow:0 6px 24px rgba(26,45,78,0.45); white-space:nowrap; transition:all 0.2s;
+}
+.float-submit:hover { transform:translateX(-50%) translateY(-2px); }
+.float-submit.active { display:block; }
+.float-submit:disabled { opacity:0.6; cursor:not-allowed; transform:translateX(-50%); }
+@media print { .float-submit { display:none !important; } }
+
+/* ── LOCKED FIELDS ── */
+.locked { background:#f5f5f5 !important; color:#999 !important; pointer-events:none; border-color:#ddd !important; }
+.locked-page { opacity:0.55; pointer-events:none; }
+.client-sig-highlight { background:#fffbf0 !important; border:2px solid var(--gold) !important; border-radius:8px !important; }
+.client-sig-highlight .sig-block-title { color:var(--gold) !important; }
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="firm-name">Pioneer Legal Consulting, LLC</div>
+  <div class="firm-sub">Consumer Advocacy · Solar Fraud Recovery</div>
+  <div class="doc-title">Confirmation of Legal Representation</div>
+  <div class="contact-bar">445 133rd Ave Wayland, MI 49348 · 313-635-3709 · legal@pioneerlegalconsulting.com</div>
+</header>
+
+<div class="page-wrap">
+
+  <div class="banner success" id="banner-success">
+    ✅ <strong>Letter of Representation submitted successfully.</strong> A signed copy has been saved and emailed to Pioneer Legal Consulting. Your case is now active.
+  </div>
+  <div class="banner error" id="banner-error">
+    ⚠️ <strong>There was a problem submitting.</strong> Please try again or call (313) 635-3709.
+  </div>
+  <div class="error-msg" id="validation-error">
+    ⚠️ <strong>Please complete all required fields before submitting.</strong> Fields highlighted below must be filled in.
+  </div>
+
+  <div class="stage-banner rep active" id="banner-rep">
+    <strong>REP MODE</strong> — Review client information below, then click <strong>"Prepare for Client Signing"</strong> to hand off to the client.
+  </div>
+  <div class="stage-banner client" id="banner-client">
+    ✍️ <strong>Please review this Letter of Representation carefully, initial each required section, and sign at the bottom. Then click "Submit."</strong>
+  </div>
+
+  <form id="lor-form">
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PAGE 1 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="lor-page" id="lor-page-1">
+    <div class="doc-header">
+      <div class="doc-header-left">
+        <div class="dh-firm">PIONEER LEGAL CONSULTING, LLC</div>
+        <div class="dh-sub">Consumer Advocacy • Solar Fraud Division</div>
+      </div>
+      <div class="doc-header-right">
+        Tel: (313) 635-3709<br>legal@pioneerlegalconsulting.com
+      </div>
+    </div>
+    <div class="doc-gold-bar"></div>
+
+    <div class="page-body">
+
+      <div style="margin-bottom:20px;">
+        <div class="field-group" style="max-width:340px;">
+          <div class="field-label">Client Name <span class="req">*</span></div>
+          <input class="field-input" type="text" name="client_name" id="client_name" required placeholder="Full legal name">
+        </div>
+        <div class="lor-text" style="margin-top:8px;">Dear <span id="dear-preview" style="font-style:italic; color:var(--text-light);">[Client Name]</span>,</div>
+      </div>
+
+      <div class="lor-text">This letter confirms that Attorney <strong>Shannon S. Fuhrman</strong> now represents you in your legal claims related to your solar system purchase, financing, and installation.</div>
+
+      <hr class="divider-line">
+
+      <div class="section-head">Who Is Working on Your Case</div>
+
+      <div class="lor-text"><strong>Shannon S. Fuhrman, Esq.</strong> (Florida Bar No. 0642797; New York State Bar No. 4013181) is your attorney of record. She is responsible for reviewing legal strategy, supervising document preparation, and representing you in any arbitration or court proceeding.</div>
+
+      <div class="lor-text"><strong>Pioneer Legal Consulting, LLC</strong> prepares all pre-arbitration documents and correspondence on your behalf under Ms. Fuhrman's supervision. Pioneer is not a law firm and does not provide legal advice independently.</div>
+
+      <div class="initials-wrap client-sig-block" id="initials-block-1">
+        <div>
+          <div class="initials-label">Initials <span class="req">*</span></div>
+          <input class="initials-field client-sig-field" type="text" name="initials_1" maxlength="5" placeholder="Initial">
+        </div>
+        <div class="initials-text">I understand who is working on my case and the respective roles of Attorney Fuhrman and Pioneer Legal Consulting, LLC.</div>
+      </div>
+
+      <hr class="divider-line">
+
+      <div class="section-head">What Happens Next</div>
+
+      <div class="step-title">Step 1: Demand / Rescission Notice</div>
+      <div class="lor-text">We will send a formal demand or rescission notice to the Respondent(s) on your behalf. This puts them on legal notice and triggers their statutory obligations to respond.</div>
+
+      <div class="step-title">Step 2: Regulatory Complaints</div>
+      <div class="lor-text">We will file formal complaints with applicable regulatory agencies, including the Consumer Financial Protection Bureau and state authorities. This creates a public record and puts additional pressure on the Respondent(s).</div>
+
+      <div class="step-title">Step 3: Negotiation / Legal Filing</div>
+      <div class="lor-text">If the Respondent does not comply or settle, we will file your individual claim in the appropriate legal forum — arbitration or federal court as determined by your attorney.</div>
+
+      <div class="step-title">Step 4: Resolution</div>
+      <div class="lor-text">Document exchange, hearings, or depositions as needed. Settlement negotiations or a decision by the arbitrator or court. You will be consulted on and must approve any settlement offer before it is accepted.</div>
+
+      <div class="initials-wrap client-sig-block" id="initials-block-2">
+        <div>
+          <div class="initials-label">Initials <span class="req">*</span></div>
+          <input class="initials-field client-sig-field" type="text" name="initials_2" maxlength="5" placeholder="Initial">
+        </div>
+        <div class="initials-text">I understand the four steps of the legal process and what to expect at each stage.</div>
+      </div>
+
+      <div class="confidential-bar"><strong>Pioneer Legal Consulting, LLC</strong> • Confirmation of Legal Representation &nbsp;&nbsp;&nbsp; <strong>CONFIDENTIAL</strong></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PAGE 2 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="lor-page" id="lor-page-2">
+    <div class="doc-header">
+      <div class="doc-header-left">
+        <div class="dh-firm">PIONEER LEGAL CONSULTING, LLC</div>
+        <div class="dh-sub">Consumer Advocacy • Solar Fraud Division</div>
+      </div>
+      <div class="doc-header-right">
+        Tel: (313) 635-3709<br>legal@pioneerlegalconsulting.com
+      </div>
+    </div>
+    <div class="doc-gold-bar"></div>
+
+    <div class="page-body">
+      <hr class="divider-line">
+
+      <div class="section-head">Contingency Arrangement</div>
+
+      <div class="lor-text">Your attorney may be involved throughout the process in a supervisory capacity, but if formal and direct involvement is triggered by arbitration, litigation, request of opposing counsel or other proceedings directly requiring licensed representation, formal terms of direct representation such as contingency, retainer, or other fee structure will be customized for your situation.</div>
+
+      <div class="initials-wrap client-sig-block" id="initials-block-3">
+        <div>
+          <div class="initials-label">Initials <span class="req">*</span></div>
+          <input class="initials-field client-sig-field" type="text" name="initials_3" maxlength="5" placeholder="Initial">
+        </div>
+        <div class="initials-text">I understand that my attorney is involved in a supervisory capacity throughout, and that formal terms of direct representation will be customized for my situation if triggered by arbitration, litigation, or other proceedings requiring licensed representation.</div>
+      </div>
+
+      <div class="confidential-bar"><strong>Pioneer Legal Consulting, LLC</strong> • Confirmation of Legal Representation &nbsp;&nbsp;&nbsp; <strong>CONFIDENTIAL</strong></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PAGE 3 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="lor-page" id="lor-page-3">
+    <div class="doc-header">
+      <div class="doc-header-left">
+        <div class="dh-firm">PIONEER LEGAL CONSULTING, LLC</div>
+        <div class="dh-sub">Consumer Advocacy • Solar Fraud Division</div>
+      </div>
+      <div class="doc-header-right">
+        Tel: (313) 635-3709<br>legal@pioneerlegalconsulting.com
+      </div>
+    </div>
+    <div class="doc-gold-bar"></div>
+
+    <div class="page-body">
+      <hr class="divider-line">
+
+      <div class="section-head">Your Responsibilities</div>
+
+      <ul class="bullet-list">
+        <li>Do not contact the Respondent(s) directly about this matter — direct all communications to Pioneer Legal Consulting, LLC.</li>
+        <li>Continue making any scheduled loan payments unless Ms. Fuhrman advises you in writing to stop.</li>
+        <li>Notify us immediately if you receive any communication from the Respondent, a collection agency, or a court.</li>
+        <li>Preserve all contracts, emails, texts, and documents related to your solar installation and financing.</li>
+        <li>Keep us updated on any change to your address, phone, or email.</li>
+      </ul>
+
+      <div class="initials-wrap client-sig-block" id="initials-block-4">
+        <div>
+          <div class="initials-label">Initials <span class="req">*</span></div>
+          <input class="initials-field client-sig-field" type="text" name="initials_4" maxlength="5" placeholder="Initial">
+        </div>
+        <div class="initials-text">I understand my responsibilities as a client and agree to fulfill them throughout the representation.</div>
+      </div>
+
+      <hr class="divider-line">
+
+      <div class="notice-box">
+        By signing below, you confirm your understanding of and agreement with the terms of this representation. Please return a signed copy to Pioneer Legal Consulting, LLC before any documents are sent to Respondents on your behalf.
+      </div>
+
+      <!-- CLIENT SIGNATURE -->
+      <div class="sig-section">
+        <div class="sig-block client-sig-block" id="client-sig-block">
+          <div class="sig-block-title">Your Signature <span class="req">*</span></div>
+
+          <div class="sig-row">
+            <div class="field-group">
+              <div class="field-label">Signature (type full name) <span class="req">*</span></div>
+              <input class="sig-typed client-sig-field" type="text" name="client_signature" required placeholder="Type your full name">
+            </div>
+            <div class="field-group">
+              <div class="field-label">Date <span class="req">*</span></div>
+              <input class="field-input client-sig-field" type="date" name="client_sig_date" required>
+            </div>
+          </div>
+
+          <div class="field-row two" style="margin-top:10px;">
+            <div class="field-group">
+              <div class="field-label">Print Name <span class="req">*</span></div>
+              <input class="field-input client-sig-field" type="text" name="print_name" required placeholder="Print full legal name">
+            </div>
+            <div class="field-group">
+              <div class="field-label">Address <span class="req">*</span></div>
+              <input class="field-input client-sig-field" type="text" name="client_address" required placeholder="Street, City, State, ZIP">
+            </div>
+          </div>
+
+          <div class="field-row two" style="margin-top:10px;">
+            <div class="field-group">
+              <div class="field-label">Email <span class="req">*</span></div>
+              <input class="field-input client-sig-field" type="email" name="client_email" required placeholder="your@email.com">
+            </div>
+            <div class="field-group">
+              <div class="field-label">Phone <span class="req">*</span></div>
+              <input class="field-input client-sig-field" type="tel" name="client_phone" required placeholder="(000) 000-0000">
+            </div>
+          </div>
+        </div>
+
+        <!-- SHANNON FUHRMAN ACCEPTANCE -->
+        <div class="sig-block plc" style="margin-top:16px;">
+          <div class="sig-block-title">Attorney Acceptance — Pioneer Legal Consulting, LLC</div>
+          <div class="atty-sig-wrap">
+            <div class="atty-sig-name">Shannon S. Fuhrman</div>
+            <div class="atty-sig-details">
+              Shannon S. Fuhrman, Esq.<br>
+              Florida Bar No. 0642797 | New York State Bar No. 4013181
+            </div>
+          </div>
+          <div class="field-group" style="max-width:200px; margin-top:10px;">
+            <div class="field-label">Date</div>
+            <input class="field-input" type="date" name="attorney_date">
+          </div>
+        </div>
+      </div>
+
+      <div class="confidential-bar"><strong>Pioneer Legal Consulting, LLC</strong> • Confirmation of Legal Representation &nbsp;&nbsp;&nbsp; <strong>CONFIDENTIAL</strong></div>
+    </div>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="submit-row no-print" id="rep-btn-row">
+    <button type="button" class="print-btn" onclick="window.print()">🖨 Print / Save PDF</button>
+    <button type="button" class="prepare-btn" onclick="prepareForClient()">✅ Prepare for Client Signing</button>
+  </div>
+  <div class="submit-row no-print" id="client-btn-row" style="display:none;">
+    <button type="button" class="print-btn" onclick="window.print()">🖨 Print / Save PDF</button>
+    <button type="button" class="submit-btn" id="submit-btn" onclick="doSubmit()">Submit Letter of Representation</button>
+  </div>
+
+  </form>
+</div>
+
+<!-- FLOATING BUTTON -->
+<button type="button" class="float-submit no-print" id="float-submit-btn" onclick="doSubmit()">
+  ✍️ Submit Letter of Representation
+</button>
+
+<script>
+// Auto-fill today's date
+const today = new Date().toISOString().split('T')[0];
+document.querySelectorAll('input[type="date"]').forEach(el => { el.value = today; });
+
+// Live preview of client name in "Dear" line
+document.getElementById('client_name').addEventListener('input', function() {
+  const preview = document.getElementById('dear-preview');
+  preview.textContent = this.value.trim() || '[Client Name]';
+  preview.style.fontStyle = this.value.trim() ? 'normal' : 'italic';
+  preview.style.color = this.value.trim() ? 'var(--text)' : 'var(--text-light)';
+});
+
+// Pre-fill from URL params
+(function() {
+  const p = new URLSearchParams(window.location.search);
+  if (!p.get('prefilled')) return;
+
+  const map = {
+    client_name: ['client_name', 'print_name'],
+    client_address: 'client_address',
+    client_email: 'client_email',
+    client_phone: 'client_phone'
+  };
+
+  Object.keys(map).forEach(param => {
+    const val = p.get(param);
+    if (!val) return;
+    const targets = Array.isArray(map[param]) ? map[param] : [map[param]];
+    targets.forEach(name => {
+      const el = document.querySelector('[name="' + name + '"]');
+      if (el) { el.value = val; if (name === 'client_name') el.dispatchEvent(new Event('input')); }
+    });
+  });
+
+  // Auto-activate client stage
+  setTimeout(() => {
+    document.getElementById('banner-rep').classList.remove('active');
+    const cb = document.getElementById('banner-client');
+    if (cb) { cb.classList.add('active'); }
+    document.getElementById('rep-btn-row').style.display = 'none';
+    document.getElementById('client-btn-row').style.display = 'flex';
+    document.getElementById('float-submit-btn').classList.add('active');
+    document.querySelectorAll('.client-sig-block').forEach(b => b.classList.add('client-sig-highlight'));
+    const first = document.querySelector('.client-sig-block');
+    if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 300);
+})();
+
+// Required client fields
+const CLIENT_SIG_REQUIRED = [
+  'initials_1', 'initials_2', 'initials_3', 'initials_4',
+  'client_signature', 'print_name', 'client_sig_date',
+  'client_address', 'client_email', 'client_phone'
+];
+
+const REP_INPUTS = '#lor-form input:not(.client-sig-field)';
+const CLIENT_SIG_BLOCKS = document.querySelectorAll('.client-sig-block');
+
+function validateFields() {
+  let firstError = null, hasError = false;
+  CLIENT_SIG_REQUIRED.forEach(name => {
+    const el = document.querySelector('[name="' + name + '"]');
+    if (!el) return;
+    if (!el.value.trim()) {
+      el.classList.add('sig-error');
+      if (!firstError) firstError = el;
+      hasError = true;
+    } else {
+      el.classList.remove('sig-error');
+    }
+  });
+  if (hasError) {
+    document.getElementById('validation-error').classList.add('active');
+    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return false;
+  }
+  document.getElementById('validation-error').classList.remove('active');
+  return true;
+}
+
+function prepareForClient() {
+  const nameEl = document.getElementById('client_name');
+  if (!nameEl.value.trim()) {
+    nameEl.style.borderColor = '#c0392b';
+    alert('Please enter the client name before handing off.');
+    return;
+  }
+  nameEl.style.borderColor = '';
+
+  document.querySelectorAll(REP_INPUTS).forEach(el => {
+    el.setAttribute('readonly', true);
+    el.classList.add('locked');
+  });
+
+  CLIENT_SIG_BLOCKS.forEach(b => b.classList.add('client-sig-highlight'));
+
+  document.getElementById('lor-page-1').classList.add('locked-page');
+  document.getElementById('lor-page-2').classList.add('locked-page');
+
+  document.getElementById('banner-rep').classList.remove('active');
+  document.getElementById('banner-client').classList.add('active');
+  document.getElementById('rep-btn-row').style.display = 'none';
+  document.getElementById('client-btn-row').style.display = 'flex';
+  document.getElementById('float-submit-btn').classList.add('active');
+
+  CLIENT_SIG_BLOCKS[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function doSubmit() {
+  if (!validateFields()) return;
+
+  const btn = document.getElementById('submit-btn');
+  const floatBtn = document.getElementById('float-submit-btn');
+  btn.disabled = true; floatBtn.disabled = true;
+  btn.innerHTML = '<span style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:8px;"></span>Submitting...';
+  floatBtn.textContent = '⏳ Submitting...';
+
+  // Copy visible field values into hidden Netlify form
+  const fields = ['client_name','print_name','client_address','client_email','client_phone',
+                  'client_signature','client_sig_date','attorney_date',
+                  'initials_1','initials_2','initials_3','initials_4'];
+  fields.forEach(name => {
+    const vis = document.querySelector('#lor-form [name="' + name + '"]');
+    const hid = document.querySelector('#netlify-form [name="' + name + '"]');
+    if (vis && hid) hid.value = vis.value;
+  });
+  document.querySelector('#netlify-form [name="submitted_at"]').value =
+    new Date().toLocaleString('en-US', { timeZone: 'America/Detroit' });
+  document.querySelector('#netlify-form [name="lang"]').value = 'en';
+  const _rep = new URLSearchParams(window.location.search).get('rep_name');
+  if (_rep) document.querySelector('#netlify-form [name="rep_name"]').value = _rep;
+
+  document.getElementById('netlify-form').submit();
+}
+</script>
+
+<!-- Netlify POST form — submits on doSubmit() -->
+<form id="netlify-form" name="lor-fuhrman" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field" style="display:none;">
+  <input type="hidden" name="form-name"     value="lor-fuhrman">
+  <input type="hidden" name="bot-field">
+  <input type="hidden" name="form_type"     value="PLC_LOR_FUHRMAN">
+  <input type="hidden" name="client_name">
+  <input type="hidden" name="print_name">
+  <input type="hidden" name="client_address">
+  <input type="hidden" name="client_email">
+  <input type="hidden" name="client_phone">
+  <input type="hidden" name="client_signature">
+  <input type="hidden" name="client_sig_date">
+  <input type="hidden" name="attorney_date">
+  <input type="hidden" name="initials_1">
+  <input type="hidden" name="initials_2">
+  <input type="hidden" name="initials_3">
+  <input type="hidden" name="initials_4">
+  <input type="hidden" name="pin">
+  <input type="hidden" name="lang">
+  <input type="hidden" name="rep_name">
+  <input type="hidden" name="submitted_at">
+</form>
+
+</body>
+</html>
